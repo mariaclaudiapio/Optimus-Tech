@@ -1,0 +1,59 @@
+:root {
+    --cinza-medio: #667085;
+    --preto-principal: #101828;
+    --vinho: #8E2424;
+    --fonte-principal: 'Inter', sans-serif;    
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "cabecalho"
+    "apresentacao"
+    "numeros"
+    "principal"
+    "vagas"
+    "depoimento"
+    "rodape"
+    ;
+    font-family: var(--fonte-principal);
+}
+
+/* cabeçalho */
+.cabecalho {
+    display: grid;
+    grid-area: cabecalho;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    color: var(--cinza-medio);
+    margin: 2em 4em;    
+}
+
+.cabecalho__navegacao-lista {
+    display: grid;
+    grid-auto-flow: column;    
+    justify-content: flex-start;
+    column-gap: 2em;
+}
+
+.cabecalho__login {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-end;
+    column-gap: 2em;
+    align-items: center;
+}
+
+.cabecalho__login-entrar,
+.cabecalho__login-cadastrar {
+    text-decoration: none;
+    color: var(--cinza-medio);
+}
+
+.cabecalho__login-cadastrar {
+    color: white;
+    border: 1px solid var(--vinho);
+    background-color: var(--vinho);
+    padding: .7em 1em;
+    border-radius: 5px;
+}
