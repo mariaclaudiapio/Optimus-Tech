@@ -2,7 +2,9 @@
     --cinza-medio: #667085;
     --preto-principal: #101828;
     --vinho: #8E2424;
-    --fonte-principal: 'Inter', sans-serif;    
+    --fonte-principal: 'Inter', sans-serif; 
+    --fundo-rosa-titulo: rgba(142, 36, 36, 0.05);
+    --fundo-rosa-sessao: rgba(195, 25, 25, 0.03);   
 }
 
 .container {
@@ -11,7 +13,7 @@
     "cabecalho"
     "apresentacao"
     "metricas"
-    "principal"
+    "conteudo"
     "vagas"
     "depoimento"
     "rodape"
@@ -72,7 +74,7 @@
     row-gap: 3em;        
 }
 
-.titulos-secundarios {
+.apresentacao__titulo-secundario {
     font-weight: 600;
     color: var(--vinho);
 }
@@ -114,4 +116,42 @@
 
 .metricas__sessao-text {    
     color: var(--cinza-medio);
+}
+
+/* sessão conteudo */
+.conteudo {
+    display: grid;
+    grid-area: conteudo;       
+    text-align: center;
+    align-items: center;
+    
+    margin: 4em 0;
+    justify-self: center;
+    row-gap: 3em;      
+}
+
+.conteudo__titulo_secundario {
+    background: var(--fundo-rosa-titulo);
+    width: 8vw;
+    justify-self: center;
+    padding: .5em;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vinho);
+}
+
+.conteudo__titulo {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--preto-principal);
+}
+
+.conteudo__texto {
+    font-size: 20px;
+    color: var(--cinza-medio);
+}
+
+.conteudo__imagem {
+    width: 90vw;
 }
