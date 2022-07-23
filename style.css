@@ -1,4 +1,5 @@
 :root {
+    --cinza-claro: #EAECF0;
     --cinza-medio: #667085;
     --preto-principal: #101828;
     --vinho: #8E2424;
@@ -123,16 +124,15 @@
     display: grid;
     grid-area: conteudo;       
     text-align: center;
-    align-items: center;
-    
-    margin: 4em 0;
+    align-items: center;    
+    margin: 4em 0 0 0;
     justify-self: center;
     row-gap: 3em;      
 }
 
 .conteudo__titulo_secundario {
     background: var(--fundo-rosa-titulo);
-    width: 8vw;
+    width: 8%;
     justify-self: center;
     padding: .5em;
     border-radius: 30px;
@@ -154,4 +154,48 @@
 
 .conteudo__imagem {
     width: 90vw;
+    justify-self: center;
+
+}
+
+/* sessão vagas */
+.vagas {
+    grid-template-areas: vagas; 
+    width: 60vw; 
+    margin: 0 auto;      
+}
+
+.vagas__areas {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--preto-principal);
+    margin-bottom: 1.5em;
+}
+
+.vagas__container {
+    border: 1px solid var(--cinza-claro);
+    border-radius: 10px;
+    padding: 2em;
+    margin: 1em 0;
+}
+
+.vagas__cargo {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--preto-principal);
+    margin-bottom: 2em;
+}
+
+.vagas__cargo-container {
+    display: flex;
+}
+
+.vagas__cargo-informacoes {
+    font-weight: 500;
+    color: var(--cinza-medio);
+    margin-right: 2em;
+}
+
+.vagas__cargo-dev {
+    margin: 4em 0 2em 0;
 }
