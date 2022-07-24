@@ -16,7 +16,7 @@
     "metricas"
     "conteudo"
     "vagas"
-    "depoimento"
+    "depoimentos"
     "rodape"
     ;
     font-family: var(--fonte-principal);
@@ -198,4 +198,42 @@
 
 .vagas__cargo-dev {
     margin: 4em 0 2em 0;
+}
+
+/* sessão depoimentos */
+.depoimentos {
+    grid-template-areas: depoimentos;
+    justify-self: center;
+    text-align: center;
+    background: var(--fundo-rosa-sessao);
+    padding: 4em;
+    width: 80vw;
+}
+
+.depoimentos__titulo {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--vinho);
+}
+
+.depoimentos__texto {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2em;
+    padding: 1em;
+}
+
+.depoimentos__avatar {
+    padding: 1em;
+}
+
+.depoimentos__nome-colaborador {
+    font-weight: 500;
+    color: var(--preto-principal);
+}
+
+.depoimentos__cargo-colaborador {
+    font-size: 14px;
+    color: var(--cinza-medio);
+    padding-top: .5em;
 }
